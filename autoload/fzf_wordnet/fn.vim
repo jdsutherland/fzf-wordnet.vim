@@ -41,7 +41,7 @@ function! s:cap_reducer(words)
 endfunction
 
 
-let s:preview_arg = get(g:, 'fzf_wordnet_preview_arg', 'up:60%')
+let s:preview_arg = get(g:, 'fzf_wordnet_preview_arg', 'right:85%')
 let s:path = expand('<sfile>:p:h:h:h')
 function! fzf_wordnet#fn#Complete(...)
   let s:words_file = get(g:, 'words_file', s:path.'/words/words')
